@@ -4,6 +4,7 @@
   "historical_anchor": "2026-Q3",
   "files": {
     "foc_market_series.csv": "8729233765a9558d520f1895d9f73129aba5820360b2d0d9c4ae84c10f8fc691",
+    "efdl_explorer_facts.csv": "bae464fe79459551d2fa13b24c6a9f5aecc87349f0d61a9ac90a609db340e491",
     "foc_eur31_series.csv": "5ed1d0463b5737c708078f755206a85e826e40379149d51a7a4e9d13ee9695df",
     "foc_public_series.csv": "2cb43587c922fc647276c8f2f6b406529bcc8bba9eb2d2dd0a19ff457623ea34",
     "foc_dhev_flags.csv": "ed971c7231473de664c881824521bdb4bb0b762d25faaafe15da858a9c88cca9",
@@ -17,10 +18,13 @@
     "foc_baseline_v1_1.csv": "c838649afc2d90108fc390bc9aacd57db06ce4964bc11b3d1670ff1f21bb0df0",
     "foc_baseline_v1_1_markets.csv": "b7506c3ada13377653921843ff8c037bac211d49b929df778fd5ab3673f086fe",
     "foc_baseline_v1_1_analog.csv": "d8921e85fdf391fcdbec680f04446a62a0851aae952e3137d7190885c4470cd4",
-    "foc_map_europe.json": "176b2a4f263bd6b771e14dd51e88111ae549948ee63d84b73dcd5d91839ce542"
+    "foc_map_europe.json": "176b2a4f263bd6b771e14dd51e88111ae549948ee63d84b73dcd5d91839ce542",
+    "foc_texts_v1_1_podzim2026.json": "856eb02d79162e1730aa0525b9923d89f638c761d7e28fb8211bd92d5f719d01",
+    "foc_texts.json": "f865e04a2dd6f58c53ccd91fec5197334c65482b3de2076251b12ab9af109c8f"
   },
   "rows": {
     "foc_market_series.csv": 45702,
+    "efdl_explorer_facts.csv": 38433,
     "foc_eur31_series.csv": 813,
     "foc_public_series.csv": 46515,
     "foc_dhev_flags.csv": 2720,
@@ -47,6 +51,8 @@
     "foc_baseline_v1_1_markets.csv",
     "foc_baseline_v1_1_analog.csv",
     "foc_map_europe.json",
+    "foc_texts_v1_1_podzim2026.json",
+    "foc_texts.json",
     "export_manifest.json"
   ],
   "estimated_rows": [
