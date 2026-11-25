@@ -1,0 +1,410 @@
+{
+  "release": "v4.1",
+  "citation": "Source: ACEA, new passenger-car registrations; calculations and frozen baseline: EuroFleet Data Lab (EFDL).",
+  "historical_anchor": "2026-Q3",
+  "files": {
+    "foc_market_series.csv": "8729233765a9558d520f1895d9f73129aba5820360b2d0d9c4ae84c10f8fc691",
+    "foc_eur31_series.csv": "5ed1d0463b5737c708078f755206a85e826e40379149d51a7a4e9d13ee9695df",
+    "foc_public_series.csv": "2cb43587c922fc647276c8f2f6b406529bcc8bba9eb2d2dd0a19ff457623ea34",
+    "foc_dhev_flags.csv": "ed971c7231473de664c881824521bdb4bb0b762d25faaafe15da858a9c88cca9",
+    "foc_eur31_monthly.csv": "6c0126872868f0206459e09023f89349518be50998a850a2597e6fbb477e5818",
+    "foc_eur31_monthly_public.csv": "bcf90632a0bcbad215fca24340b039814c5781d1bc6779f25d5a317e4eaf828b",
+    "foc_thresholds.csv": "9bc49e9468e12d23b16bf1b798c62ecc6680f4117a7d4ee0194cc2c908293150",
+    "foc_baseline_level_2026q3.csv": "865dda9a3e37d2d1b79a86a2000d696221bbf41f56f320e6ce0462941aea32b4"
+  },
+  "rows": {
+    "foc_market_series.csv": 45702,
+    "foc_eur31_series.csv": 813,
+    "foc_public_series.csv": 46515,
+    "foc_dhev_flags.csv": 2720,
+    "foc_eur31_monthly.csv": 58,
+    "foc_eur31_monthly_public.csv": 58,
+    "foc_thresholds.csv": 96,
+    "foc_baseline_level_2026q3.csv": 186
+  },
+  "rows_public": 46515,
+  "public_files": [
+    "foc_public_series.csv",
+    "foc_eur31_monthly_public.csv",
+    "foc_dhev_flags.csv",
+    "foc_thresholds.csv",
+    "foc_baseline_level_2026q3.csv",
+    "export_manifest.json"
+  ],
+  "estimated_rows": [
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "BEV"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "HEV_COMBINED"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "OTHER"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "PHEV"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "TOTAL"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "BEV"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "HEV_COMBINED"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "OTHER"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "PHEV"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "BG",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "TOTAL"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "BEV"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "ICE_DIESEL"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "ICE_PETROL"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "OTHER"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "PHEV"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "TOTAL"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "BEV"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "ICE_DIESEL"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "ICE_PETROL"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "OTHER"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "PHEV"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "LV",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "TOTAL"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "BEV"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "HEV_COMBINED"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "ICE_DIESEL"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "ICE_PETROL"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "OTHER"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-07",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "TOTAL"
+      },
+      "method": "YTD_08_MINUS_YTD_06_MINUS_M_08"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "BEV"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "HEV_COMBINED"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "ICE_DIESEL"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "ICE_PETROL"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "OTHER"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    },
+    {
+      "row_key": {
+        "country_code": "RO",
+        "period": "2026-Q3",
+        "data_status": "HISTORICAL_ANCHOR",
+        "scenario": null,
+        "classification": "ACEA",
+        "powertrain": "TOTAL"
+      },
+      "method": "SUM_COMPLETE_MONTHS"
+    }
+  ]
+}
