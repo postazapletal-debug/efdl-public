@@ -13,7 +13,7 @@
     "foc_baseline_level_2026q3.csv": "865dda9a3e37d2d1b79a86a2000d696221bbf41f56f320e6ce0462941aea32b4",
     "foc_market_weights.csv": "d66d45c9b755e079e06bab752e3b8b0e44a49d29c433f040276a0a07cafca48f",
     "foc_fleet_shares.csv": "ab7a239a29dea8b7abaf94397e96ac8bac843932e1f16a09d1834f80f5dbc477",
-    "foc_used_import_shares.csv": "b41f6bcc180bbf7f8169d5ed5e99450f68dd4bba5648090e7faa9e46eedce6f1"
+    "foc_used_import_shares.csv": "498150758bb227ce34d59298122c3257d8a0612964df997f539d10805bc09d9b"
   },
   "rows": {
     "foc_market_series.csv": 45702,
@@ -26,7 +26,7 @@
     "foc_baseline_level_2026q3.csv": 186,
     "foc_market_weights.csv": 155,
     "foc_fleet_shares.csv": 1088,
-    "foc_used_import_shares.csv": 15
+    "foc_used_import_shares.csv": 184
   },
   "rows_public": 46515,
   "public_files": [
