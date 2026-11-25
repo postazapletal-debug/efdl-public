@@ -13,7 +13,11 @@
     "foc_baseline_level_2026q3.csv": "865dda9a3e37d2d1b79a86a2000d696221bbf41f56f320e6ce0462941aea32b4",
     "foc_market_weights.csv": "d66d45c9b755e079e06bab752e3b8b0e44a49d29c433f040276a0a07cafca48f",
     "foc_fleet_shares.csv": "ab7a239a29dea8b7abaf94397e96ac8bac843932e1f16a09d1834f80f5dbc477",
-    "foc_used_import_shares.csv": "9b6cf604700abc3b637111d5f41d5518c9861e556180ac93941b443ffaf699c2"
+    "foc_used_import_shares.csv": "9b6cf604700abc3b637111d5f41d5518c9861e556180ac93941b443ffaf699c2",
+    "foc_baseline_v1_1.csv": "c838649afc2d90108fc390bc9aacd57db06ce4964bc11b3d1670ff1f21bb0df0",
+    "foc_baseline_v1_1_markets.csv": "b7506c3ada13377653921843ff8c037bac211d49b929df778fd5ab3673f086fe",
+    "foc_baseline_v1_1_analog.csv": "d8921e85fdf391fcdbec680f04446a62a0851aae952e3137d7190885c4470cd4",
+    "foc_map_europe.json": "176b2a4f263bd6b771e14dd51e88111ae549948ee63d84b73dcd5d91839ce542"
   },
   "rows": {
     "foc_market_series.csv": 45702,
@@ -26,7 +30,8 @@
     "foc_baseline_level_2026q3.csv": 186,
     "foc_market_weights.csv": 155,
     "foc_fleet_shares.csv": 1088,
-    "foc_used_import_shares.csv": 313
+    "foc_used_import_shares.csv": 313,
+    "foc_baseline_v1_1.csv": 672
   },
   "rows_public": 46515,
   "public_files": [
@@ -38,6 +43,10 @@
     "foc_market_weights.csv",
     "foc_fleet_shares.csv",
     "foc_used_import_shares.csv",
+    "foc_baseline_v1_1.csv",
+    "foc_baseline_v1_1_markets.csv",
+    "foc_baseline_v1_1_analog.csv",
+    "foc_map_europe.json",
     "export_manifest.json"
   ],
   "estimated_rows": [
