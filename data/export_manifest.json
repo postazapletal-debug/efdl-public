@@ -4,7 +4,7 @@
   "historical_anchor": "2026-Q3",
   "files": {
     "foc_market_series.csv": "8729233765a9558d520f1895d9f73129aba5820360b2d0d9c4ae84c10f8fc691",
-    "efdl_explorer_facts.csv": "bae464fe79459551d2fa13b24c6a9f5aecc87349f0d61a9ac90a609db340e491",
+    "efdl_explorer_facts.csv": "9ece5384fb69de473fea5df31c52d4a462b6baed9c749e39c7517c7f80b26b19",
     "foc_eur31_series.csv": "5ed1d0463b5737c708078f755206a85e826e40379149d51a7a4e9d13ee9695df",
     "foc_public_series.csv": "2cb43587c922fc647276c8f2f6b406529bcc8bba9eb2d2dd0a19ff457623ea34",
     "foc_dhev_flags.csv": "ed971c7231473de664c881824521bdb4bb0b762d25faaafe15da858a9c88cca9",
@@ -24,7 +24,7 @@
   },
   "rows": {
     "foc_market_series.csv": 45702,
-    "efdl_explorer_facts.csv": 38433,
+    "efdl_explorer_facts.csv": 38496,
     "foc_eur31_series.csv": 813,
     "foc_public_series.csv": 46515,
     "foc_dhev_flags.csv": 2720,
