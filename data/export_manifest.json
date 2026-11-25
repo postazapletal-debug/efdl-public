@@ -11,7 +11,8 @@
     "foc_eur31_monthly_public.csv": "bcf90632a0bcbad215fca24340b039814c5781d1bc6779f25d5a317e4eaf828b",
     "foc_thresholds.csv": "9bc49e9468e12d23b16bf1b798c62ecc6680f4117a7d4ee0194cc2c908293150",
     "foc_baseline_level_2026q3.csv": "865dda9a3e37d2d1b79a86a2000d696221bbf41f56f320e6ce0462941aea32b4",
-    "foc_market_weights.csv": "d66d45c9b755e079e06bab752e3b8b0e44a49d29c433f040276a0a07cafca48f"
+    "foc_market_weights.csv": "d66d45c9b755e079e06bab752e3b8b0e44a49d29c433f040276a0a07cafca48f",
+    "foc_fleet_shares.csv": "ab7a239a29dea8b7abaf94397e96ac8bac843932e1f16a09d1834f80f5dbc477"
   },
   "rows": {
     "foc_market_series.csv": 45702,
@@ -22,7 +23,8 @@
     "foc_eur31_monthly_public.csv": 58,
     "foc_thresholds.csv": 96,
     "foc_baseline_level_2026q3.csv": 186,
-    "foc_market_weights.csv": 155
+    "foc_market_weights.csv": 155,
+    "foc_fleet_shares.csv": 1088
   },
   "rows_public": 46515,
   "public_files": [
@@ -32,6 +34,7 @@
     "foc_thresholds.csv",
     "foc_baseline_level_2026q3.csv",
     "foc_market_weights.csv",
+    "foc_fleet_shares.csv",
     "export_manifest.json"
   ],
   "estimated_rows": [
