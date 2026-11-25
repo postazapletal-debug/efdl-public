@@ -69,6 +69,14 @@
   @media (max-width: 820px) { .efdl-texts-pick { grid-template-columns: 1fr; } }
   #focTextPreview { padding: 0; overflow: hidden; }
   #focTextPreview iframe { width: 100%; min-height: 150px; border: 0; display: block; }
+  /* Gemini, posudek aplikace v1 (25. 11. 2026) */
+  .efdl-table-wrap td.msg-col { white-space: normal; overflow-wrap: anywhere; min-width: 180px; }
+  @media (max-width: 640px) {
+    .efdl-nav { gap: 4px; margin-bottom: 8px; }
+    .efdl-tab-btn, #efdlLogoutBtn { padding: 5px 8px; font-size: 0.78rem; }
+    .efdl-select, .efdl-input { font-size: 0.8rem; padding: 6px 8px; }
+    .efdl-top { gap: 4px; } #efdlWho { font-size: 0.76rem; }
+  }
 </style>
 </head>
 <body>
@@ -340,7 +348,7 @@ async function loadOverview() {
     const rep = JSON.parse(await contents('run_report.json', true));
     const src = rep.sources || [];
     const bad = src.filter(s => /ERROR|FAIL/.test(s.status)).length;
-    const rows = src.map(s => `<tr><td>${esc(s.source_code)}</td><td class="${STATUS_CLASS[s.status] || 'st-warn'}">${esc(s.status)}</td><td>${nf0.format(s.new_rows || 0)}</td><td>${nf0.format(s.revised_rows || 0)}</td><td style="white-space:normal; min-width:220px;">${esc(s.message || '')}</td></tr>`).join('');
+    const rows = src.map(s => `<tr><td>${esc(s.source_code)}</td><td class="${STATUS_CLASS[s.status] || 'st-warn'}">${esc(s.status)}</td><td>${nf0.format(s.new_rows || 0)}</td><td>${nf0.format(s.revised_rows || 0)}</td><td class="msg-col">${esc(s.message || '')}</td></tr>`).join('');
     box.innerHTML = `<div style="margin-bottom:8px;">Poslední běh: <b>${esc(when(rep.finished_at))}</b> · režim ${esc(rep.mode)} · výsledek <b class="${rep.result === 'CHECKS_PASSED' ? 'st-ok' : 'st-bad'}">${esc(rep.result)}</b> · zdroje ${src.length}, s chybou <b class="${bad ? 'st-bad' : 'st-ok'}">${bad}</b> · <a href="${esc(rep.run_url)}" target="_blank" rel="noopener noreferrer">běh v GitHubu</a></div>
       <div class="efdl-table-wrap"><table><thead><tr><th>Zdroj</th><th>Stav</th><th>Nové řádky</th><th>Revize</th><th>Zpráva</th></tr></thead><tbody>${rows}</tbody></table></div>`;
   } catch (e) { box.textContent = apiHint(e, 'číst repozitář (Contents: Read)'); }
