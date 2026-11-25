@@ -414,6 +414,7 @@ async function loadExplorer() {
   fillSelect('efdlFlowSelect', uniq('flow_type'), FLOW_NAMES, 'NEW');
   ['efdlCountrySelect', 'efdlSourceSelect', 'efdlPowertrainSelect', 'efdlFlowSelect', 'efdlPtypeSelect'].forEach(id => el(id).onchange = renderExplorer);
   ['efdlPeriodFrom', 'efdlPeriodTo'].forEach(id => el(id).oninput = renderExplorer);
+  addEventListener('resize', () => { clearTimeout(DATA.rz); DATA.rz = setTimeout(renderExplorer, 200); });
   renderExplorer();
 }
 function renderExplorer() {
@@ -437,7 +438,8 @@ function renderExplorer() {
   el('efdlTableNote').textContent = rows.length > 500 ? `Zobrazeno 500 nejnovějších z ${nf0.format(rows.length)} řádků. Zužte období.` : 'Kusy jsou neveřejné (licence ACEA), proto je průzkumník jen za přihlášením.';
 }
 function drawChart(rows) {
-  const svg = el('efdlSeriesChart'), W = 880, H = 240, m = { l: 44, r: 12, t: 12, b: 26 };
+  const svg = el('efdlSeriesChart'), W = Math.max(320, Math.round(svg.clientWidth || 880)), H = 240, m = { l: 44, r: 12, t: 12, b: 26 };
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
   const series = new Map();
   for (const r of rows) {
     if (r.share_pct === '') continue;
@@ -453,8 +455,8 @@ function drawChart(rows) {
   const y = v => H - m.b - v / top * (H - m.t - m.b);
   let g = '';
   for (let k = 0; k <= 4; k++) { const v = top * k / 4; g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="#26344f" stroke-width="1"/><text x="${m.l - 6}" y="${y(v) + 4}" fill="#94a3b8" font-size="11" text-anchor="end">${nf1.format(v).replace(',0', '')} %</text>`; }
-  const step = Math.max(1, Math.ceil(periods.length / 8));
-  periods.forEach((p, i) => { if (i % step === 0 || i === periods.length - 1) g += `<text x="${x(i)}" y="${H - 8}" fill="#94a3b8" font-size="11" text-anchor="middle">${esc(p)}</text>`; });
+  const step = Math.max(1, Math.ceil(periods.length / Math.max(3, Math.floor(W / 110))));
+  periods.forEach((p, i) => { if (i % step === 0 || i === periods.length - 1) g += `<text x="${x(i)}" y="${H - 8}" fill="#94a3b8" font-size="11" text-anchor="${i === periods.length - 1 && periods.length > 1 ? 'end' : i === 0 && periods.length > 1 ? 'start' : 'middle'}">${esc(p)}</text>`; });
   const dash = {}; const legend = [];
   for (const s of series.values()) {
     const n = dash[s.layer] = (dash[s.layer] ?? -1) + 1, da = ['', '6 4', '2 3', '10 3 2 3'][n % 4];
